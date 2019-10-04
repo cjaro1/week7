@@ -1,0 +1,186 @@
+/*Color Palette
+#340068 Purpleish
+#FF6978 Coral
+#FFFCF9 Off White
+#B1EDE8 light SeaFoam
+#6D435A Mute Burgundy
+*/
+/*Global stylesheet
+------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+	color:#323232;
+	padding: 0;
+}
+.nav {
+	width: 100%;
+}
+.nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	background: #7147F0;
+}
+.nav li {
+	display: inline-block;
+}
+.nav a{
+	text-decoration: none;
+	width: auto;
+	display: block;
+	padding:15px;
+	font-family: 'Anton', sans-serif;
+	font-size: 17px;
+	color:#280D6A
+}
+.nav a:hover {
+	display:block;
+	background: #280D6A;
+	color:#FFFCF9;
+	transition: 0.4s;
+}
+.nav li ul {
+	position: absolute;
+	display: block;
+	background:#7147F0;
+	color:#FFFCF9;
+	width: auto;
+	left: -999em;
+	transition: 0.4s;
+	padding: 5px;
+}
+.nav li:hover ul {
+	left: auto;
+	transition: 0.5s;
+}
+h1, h2 {
+  font-family: 'Anton', sans-serif;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #FFFCF9;
+	padding:10px;
+}
+a:hover {
+  text-decoration: none;
+	color:#FF6978;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+
+.vertical-word {
+  writing-mode: vertical-rl;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  background: red;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/*Header and footer
+----------------------*/
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header, footer {
+  background-color:#280D6A;
+  color: #FFFCF9;
+}
+/* header */
+.profile-img {
+  border-radius: 50%;
+	margin-right: 15px;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header h1, header h2 {
+  color: #FFFCF9;
+  margin: 0;
+}
+/*footer*/
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 20px
+  display: inline-block;
+}
+
+/*Work Experience
+----------------------*/
+.work {
+  color: white;
+  background: linear-gradient(rgba(40, 13, 106, 0.5), rgba(40, 13, 106, 0.5))
+                              url("images/Airheads1.png") no-repeat fixed;
+  background-size: cover;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-decription p:first-of-type {
+  margin-top: 0;
+}
+.job-desciption {
+  margin-bottom: 25px
+}
+/*Education
+----------------------*/
+.education {
+  background-color: #B1EDE8
+}
+p + h3 {
+  margin-top: 30px;
+}
+@media (min-width: 900px) {
+	.col-narrow {
+  width: 30%;
+  float: left;
+}
+.col-width {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  min-height: 175px;
+}
+}
+
+@media (max-width: 899px) {
+	header{
+		text-align: center;
+	}	
+	.profile-img {
+		width: 200px;
+	}
+}
